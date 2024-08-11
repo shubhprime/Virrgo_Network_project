@@ -1,0 +1,423 @@
+body {
+  color: rgba(12, 12, 12, 0.466);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  background-image: url(https://www.ridan.co.uk/wp-content/uploads/2022/03/family-with-ridan-compost-box-1920x1080.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: change 20s infinite ease-in-out;
+}
+
+.bgImageContainer {
+  position: relative;
+  width: auto;
+  height: 75vh; 
+  overflow: hidden;
+}
+
+@keyframes change {
+  0% {
+    background-image: url(https://www.ridan.co.uk/wp-content/uploads/2022/03/family-with-ridan-compost-box-1920x1080.jpg);
+  }
+  20% {
+    background-image: url(https://www.europeanbusinessreview.com/wp-content/uploads/2021/09/Receptionist.jpg);
+  }
+  40% {
+    background-image: url(https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2023/05/438_AdobeStock_556549775-scaled.jpeg);
+  }
+  60% {
+    background-image: url(https://predictabledesigns.com/wp-content/uploads/2018/01/HeroImage2.jpg);
+  }
+  80% {
+    background-image: url(https://images.ctfassets.net/iiu58j8xnirw/6TGpJQfDehUYY6ahDl9BSE/436bbae33489196c7ba5929f2fa174af/freshfoodmarket.jpg?w=1920&q=70&fm=webp);
+  }
+  100% {
+    background-image: url(https://www.ridan.co.uk/wp-content/uploads/2022/03/family-with-ridan-compost-box-1920x1080.jpg);
+
+  }
+}
+
+.containerCard{
+  position: absolute;
+  background-color: rgba(135, 109, 221, 0.222);
+  display: flex;
+  flex-direction: column;
+  top: 250px;
+  left: 100px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.containerCard :nth-child(1){
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 10px 20px 5px 20px;
+  color: rgb(255, 255, 255);
+}
+
+.containerCard :nth-child(2){
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f4dada9d;
+  padding: 0px 20px 20px 20px;
+}
+
+.containerCard :nth-child(3){
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(211, 211, 231, 0.842);
+  padding: 0px 20px 10px 20px;
+}
+
+.horizontal {
+  width: 100%;
+  height: 5px;
+  margin: 0;
+  border: 0;
+  background-color: #1e3050ad;
+}
+
+.intro{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+  padding-bottom: 13rem;
+}
+
+.introText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #f5f5dc;
+  height: 30vh;
+  max-width: 35vw;
+  padding-top: 80px;
+}
+
+.introText1{
+  font-size: 2.7rem;
+  padding-top: 40px;
+}
+
+.introText span{
+  font-weight: bolder;
+}
+
+.introText2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.introText3{
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.introBtn{
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8rem;
+  padding: 10px 25px;
+  box-shadow: 50px 0 58px -5px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5ab;
+}
+
+.introBtn:hover{
+  cursor: pointer;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 8rem;
+  transition: all 0.3s ease;
+  background-color: #eaea29;
+}
+
+.introImg1{
+  position: relative;
+  height: 50vh;
+  width: auto;
+  border-radius: 0px 50px 0 50px;
+  box-shadow: 50px 40px 58px -5px rgba(0, 0, 0, 0.3);
+}
+
+.fontFavicon{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon1{
+  background-color: #6168ff17;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.fontFavicon1{
+  position: absolute;
+  bottom: -7vh;
+  right: 41.3vw;
+  background-color: #f5f5ab;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+.icon2{
+  background-color: rgba(10, 191, 83, 0.17);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.fontFavicon2{
+  position: absolute;
+  bottom: -52vh;
+  left: 76vw;
+  background-color: #f5f5ab;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.icon3{
+  background-color: rgba(153, 0, 51, 0.14);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.fontFavicon3{
+  position: absolute;
+  bottom: -63vh;
+  right: 28vw;
+  background-color: #f5f5ab;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.whatWeDo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 4rem;
+}
+
+.whatWeDoText1{
+  font-size: 2rem;
+}
+
+.whatWeDoText2{
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.serviceCategory{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 145px;
+}
+
+.serviceCategoryContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serviceCategoryContainer :nth-child(1){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.serviceCategoryIcon1{
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.serviceCategoryTitle{
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+.serviceCategoryDesc{
+  padding-bottom: 40px;
+}
+
+.serviceFlex{
+  display: flex;
+  padding: 100px 140px 180px 140px;
+  gap: 140px;
+}
+
+.serviceFlexLeftSection{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagebg{
+  position: absolute;
+  top: -10vh;
+  left: 14.5vw;
+}
+
+.image{
+  position: relative;
+  width: 35vw;
+  height: auto;
+  border-radius: 30px;
+}
+
+.overlay{
+  position: absolute;
+  background-color: #f5f5ab;
+  border-radius: 30px;
+  padding: 40px 30px;
+  width: 28vw;
+  bottom: -15vh;
+  right: -4vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 50px 0 58px -5px rgba(0, 0, 0, 0.3);
+}
+
+.serviceFlexTextfaClock{
+  height: 40px;
+}
+
+.serviceFlexTextfaLaptop{
+  height: 40px;
+}
+
+.overlay :nth-child(1){
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.overlay :nth-child(2){
+  font-size: 1.1rem;
+}
+
+.overlay :nth-child(3){
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.overlay > div:nth-child(3) > div:nth-child(2){
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.serviceFlexText{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  gap: 50px;
+}
+
+.serviceFlexText :nth-child(1){
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.serviceFlexText > div:nth-child(1) > div:nth-child(1){
+  font-size: 2rem;
+}
+
+.serviceFlexText > div:nth-child(1) > div:nth-child(2){
+  font-size: 1.3rem;
+}
+
+.serviceFlexText :nth-child(2){
+  display: flex;
+  gap: 20px;
+}
+
+.serviceFlexText > div:nth-child(2) > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.serviceFlexText :nth-child(3){
+  display: flex;
+  gap: 20px;
+}
+
+.serviceFlexText > div:nth-child(3) > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.final{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.finalText{
+  font-size: 2rem;
+}
+
+.serviceCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.serviceCard {
+  background-color: #f5f5ab;
+  flex-basis: 30%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.finalImage{
+  height: 40px;
+}
+
+.serviceCard :nth-child(1){
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding-bottom: 10px;
+}
+
+.serviceCard :nth-child(3){
+  font-size: 1.1rem;
+  padding-top: 15px;
+}
+
+.finalNumber{
+  font-size: 3rem;
+}
+
+.finalDesc{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+

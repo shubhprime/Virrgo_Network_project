@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Sora:wght@400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  font-family: 'Sora', sans-serif;
+  color: rgba(12, 12, 12, 0.466);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.imageContainer {
+  position: relative;
+  width: auto;
+  height: 71vh;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+}
+
+.overlay {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2.7rem;
+  border-radius: 5px;
+  border-top: 2px solid rgba(167, 12, 12, 0.844);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 30rem;
+}
+
+.overlay :first-child {
+  font-size: 1.2rem;
+  color: red;
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+
+.overlay :nth-child(2) {
+  font-size: 2.3rem;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.overlay :nth-child(3) {
+  font-size: 1.5rem;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+  padding: 4rem 10rem 4rem 6rem;
+  overflow: hidden;
+}
+
+.imageStyle {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  flex-basis: 40%;
+}
+
+.imageStyle .pic2 {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.imageStyle .dotspic {
+  position: absolute;
+  top: -70px;
+  left: 190px;
+  z-index: 1;
+  width: 80%;
+  height: auto;
+}
+
+.textStyle {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 55%;
+  margin-left: 7rem;
+  gap: 8px;
+  padding-right: 5rem;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ourMission,
+.ourVision,
+.ourValues {
+  margin-top: 20px;
+}
+
+.textContainer {
+  margin-top: 20px;
+}
+
+.text {
+  word-wrap: break-word;
+  font-size: 1.2rem;
+}
+
+.horizontal {
+  width: 100%;
+  height: 5px;
+  margin: 0;
+  border: 0;
+  background-color: rgb(103, 104, 103);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.teamText {
+  width: 40vw;
+}
+
+.teamText div {
+  padding-bottom: 4rem;
+}
+
+.teamPic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.teamPic img {
+  width: 17rem;
+  height: auto;
+  border-radius: 10%;
+}
+
+.teamPic div {
+  width: 14rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .overlay {
+    top: 80px;
+    left: 50px;
+    width: 25rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .overlay {
+    top: 60px;
+    left: 30px;
+    width: 20rem;
+    padding: 1rem 2rem;
+  }
+
+  .infoContainer {
+    padding: 3rem 6rem 3rem 4rem;
+  }
+
+  .imageStyle {
+    margin-right: 20px;
+  }
+
+  .textStyle {
+    margin-left: 4rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .infoContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .imageStyle {
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .imageStyle .pic2,
+  .imageStyle .dotspic {
+    width: 80%;
+  }
+
+  .textStyle {
+    flex-basis: 100%;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .overlay {
+    top: 40px;
+    left: 20px;
+    width: 18rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .overlay {
+    top: 20px;
+    left: 10px;
+    width: 15rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .teamText {
+    width: 80vw;
+  }
+
+  .teamPic img {
+    width: 14rem;
+  }
+
+  .teamPic div {
+    width: 12rem;
+  }
+}

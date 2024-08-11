@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.DropDownList {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    border: none;
+    display: grid;
+    grid-template-columns: 13vw 1fr;
+    z-index: 1000;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 10px 40px 10px;
+    border: 1px solid rgb(191, 187, 187);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Menu a {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.MenuItem img {
+    width: 22px;
+    height: auto;
+    margin-left: 5px;
+    padding-top: 2px;
+}
+
+.MenuItem {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Submenu {
+    background-color: rgba(255, 255, 255, 0.903);
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 99.8%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 13vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.0s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.SubmenuVisible {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.SubmenuProducts {
+    background-color: rgb(174, 33, 33);
+}
+
+.SubmenuServices {
+    background-color: rgb(21, 131, 90);
+}
+
+.Submenu a {
+    color: rgb(50, 49, 49);
+    text-decoration: none;
+}
+
+.Submenu a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.SubmenuProductsList,
+.SubmenuServicesList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    height: 100%;
+    padding: 10px;
+}
+
+.SubmenuProductsList * {
+    color: rgb(118, 29, 213);
+    background-color: none;
+    border-radius: 6px;
+    padding: 4px 6px;
+    height: auto;
+    width: auto;
+    white-space: nowrap;
+}
+
+.SubmenuServicesList * {
+    color: rgb(198, 20, 150);
+    background-color: none;
+    border-radius: 6px;
+    padding: 4px 6px;
+    height: auto;
+    width: auto;
+}
+
+.RotateArrow {
+    transition: transform 0.5s ease;
+    width: 12px;
+    height: auto;
+    margin-left: 5px;
+    padding-top: 2px;
+}
+
+.RotateArrowOpen {
+    transform: rotate(180deg);
+}
+
+.RotateArrowClose {
+    transform: rotate(0deg);
+}
+
+@media (max-width: 1024px) {
+    .DropDownList {
+        grid-template-columns: 20vw 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .DropDownList {
+        grid-template-columns: 1fr;
+        top: 85px;
+    }
+
+    .Menu {
+        border: none;
+        border-radius: 0;
+        padding: 5px;
+        gap: 20px;
+    }
+
+    .Menu a {
+        font-size: 18px;
+    }
+
+    .Submenu {
+        left: 0;
+        top: 0;
+        max-height: 0;
+    }
+
+    .SubmenuVisible {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Menu {
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .Menu a {
+        font-size: 16px;
+    }
+
+    .RotateArrow {
+        width: 18px;
+    }
+
+    .Submenu {
+        max-height: 200px;
+    }
+}

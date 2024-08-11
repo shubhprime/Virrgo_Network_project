@@ -1,0 +1,159 @@
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.bannerImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.topicHeading {
+    width: 70vw;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.topicPara {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-size: 1.2rem;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+/* Adjustments for the stats section */
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 70px 0 50px 0;
+}
+
+.stats>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.verticalLine {
+    background-color: black;
+    height: 200px;
+    width: 1px;
+    margin: 0 20px;
+}
+
+.stats>div>span {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.stats>div>span:nth-child(1) {
+    font-size: 50px;
+}
+
+.stats>div>span:nth-child(2) {
+    font-size: 28px;
+}
+
+/* Adjustments for the consultancy image */
+.consultancySection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 80vw;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+.consultancyImg {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 40px;
+}
+
+.consultancyContent {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.consultancyContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.consultancyContent p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.whyUsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.whyUsSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.whyUsSection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.horizontal {
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    border: 0;
+    background-color: rgb(103, 104, 103);
+}
+
+/* Hide stats on small screens */
+@media (max-width: 768px) {
+    .stats {
+        display: none;
+    }
+
+    .consultancyImg {
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .consultancySection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .topicHeading, .topicPara {
+        width: 90vw;
+    }
+}

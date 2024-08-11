@@ -1,0 +1,286 @@
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.bannerImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.topicHeading {
+    width: 70vw;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.topicPara {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-size: 1.2rem;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.stats>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.verticalLine {
+    background-color: black;
+    height: 200px;
+    width: 1px;
+    margin: 0 20px;
+}
+
+.stats>div>span {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.stats>div>span:nth-child(1) {
+    font-size: 50px;
+}
+
+.stats>div>span:nth-child(2) {
+    font-size: 28px;
+}
+
+.consultancySection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 50px auto;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.consultancyImg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+.consultancyContent {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.consultancyContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.consultancyContent p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.whyUsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 100px 20px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.whyUsSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.whyUsSection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.horizontal {
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    border: 0;
+    background-color: rgb(103, 104, 103);
+}
+
+@media (max-width: 1200px) {
+    .topicHeading {
+        width: 80vw;
+        font-size: 1.6rem;
+    }
+
+    .topicPara {
+        width: 60vw;
+        font-size: 1.1rem;
+    }
+
+    .stats>div>span:nth-child(1) {
+        font-size: 40px;
+    }
+
+    .stats>div>span:nth-child(2) {
+        font-size: 24px;
+    }
+
+    .consultancyContent h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .bannerContainer {
+        height: 40vh;
+    }
+
+    .bannerImg {
+        object-position: center;
+    }
+
+    .topicHeading {
+        width: 90vw;
+        font-size: 1.5rem;
+    }
+
+    .topicPara {
+        width: 70vw;
+        font-size: 1rem;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .verticalLine {
+        height: 1px;
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .consultancySection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultancyImg {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .consultancyContent {
+        width: 90vw;
+    }
+
+    .consultancyContent h2 {
+        font-size: 1.6rem;
+    }
+
+    .whyUsSection h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerContainer {
+        height: 30vh;
+    }
+
+    .topicHeading {
+        width: 95vw;
+        font-size: 1.4rem;
+    }
+
+    .topicPara {
+        width: 80vw;
+        font-size: 0.9rem;
+    }
+
+    .stats>div>span:nth-child(1) {
+        font-size: 30px;
+    }
+
+    .stats>div>span:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .consultancyContent h2 {
+        font-size: 1.4rem;
+    }
+
+    .whyUsSection h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .bannerContainer {
+        height: 25vh;
+    }
+
+    .topicHeading {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .topicPara {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .stats>div>span:nth-child(1) {
+        font-size: 24px;
+    }
+
+    .stats>div>span:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .consultancyContent h2 {
+        font-size: 1.2rem;
+    }
+
+    .whyUsSection h2 {
+        font-size: 1.4rem;
+    }
+
+    .consultancySection {
+        padding: 30px 0;
+        padding-right: 80px;
+    }
+}

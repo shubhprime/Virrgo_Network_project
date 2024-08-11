@@ -1,0 +1,288 @@
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    height: 43vh;
+    overflow: hidden;
+}
+
+.bannerImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.topicHeading {
+    width: 70vw;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.topicPara {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-size: 1.2rem;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.consultancySection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 80vw;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+.consultancyImg {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 40px;
+}
+
+.consultancyContent {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.consultancyContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.consultancyContent p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.lowerImg {
+    width: 30vw;
+    border-radius: 40px;
+}
+
+.whyUsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.whyUsSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.whyUsSection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.additionalInfoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.additionalInfoSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.additionalInfoSection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.technologySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.technologySection img {
+    width: 35vw;
+    height: auto;
+    border-radius: 40px;
+}
+
+.technologySection div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.technologySection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.technologySection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.horizontal {
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    border: 0;
+    background-color: rgb(103, 104, 103);
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .topicHeading {
+        width: 80vw;
+    }
+
+    .topicPara {
+        width: 60vw;
+    }
+
+    .consultancySection {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .consultancyContent {
+        width: 80%;
+    }
+
+    .consultancyImg {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .lowerImg {
+        width: 50vw;
+    }
+
+    .technologySection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technologySection img {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .bannerContainer {
+        height: 35vh;
+    }
+
+    .topicHeading {
+        font-size: 1.5rem;
+        width: 90vw;
+    }
+
+    .topicPara {
+        font-size: 1rem;
+        width: 80vw;
+    }
+
+    .consultancySection {
+        padding: 20px 0;
+    }
+
+    .consultancyContent {
+        width: 100%;
+    }
+
+    .consultancyImg {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .whyUsSection {
+        width: 90vw;
+    }
+
+    .additionalInfoSection {
+        width: 90vw;
+    }
+
+    .technologySection {
+        width: 90vw;
+        margin: 0;
+    }
+
+    .technologySection img {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .bannerContainer {
+        height: 30vh;
+    }
+
+    .topicHeading {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .topicPara {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .consultancySection {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .consultancyContent {
+        width: 100%;
+    }
+
+    .consultancyImg {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .whyUsSection {
+        width: 100%;
+    }
+
+    .additionalInfoSection {
+        width: 100%;
+    }
+
+    .technologySection {
+        width: 100%;
+    }
+
+    .technologySection img {
+        width: 100%;
+    }
+}

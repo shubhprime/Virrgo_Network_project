@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Sora:wght@400&display=swap');
+
+.container {
+    border: none;
+    color: white;
+    font-size: larger;
+    font-family: 'Sora', sans-serif;
+    padding-top: 15px;
+    padding: 5% 10%;
+}
+
+.input,
+.inputQuery {
+    font-size: medium;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.358);
+    background-color: rgba(118, 29, 213, 0);
+    width: 100%;
+    color: rgba(255, 255, 255, 0.668);
+    outline: none;
+    transition: border-bottom 0.3s ease, padding-top 0.3s ease;
+}
+
+.input:focus,
+.inputQuery:focus {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.name {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.LineBreaker {
+    margin-bottom: 40px;
+    position: relative;
+    flex: 1;
+}
+
+.label {
+    transition: all 0.3s ease;
+}
+
+.floatingLabel {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: small;
+    color: rgba(255, 255, 255, 0.668);
+}
+
+.inputQuery {
+    min-height: 10vh;
+    resize: none;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    max-width: 150px;
+    width: 100%;
+    font-size: large;
+    background-color: #ef4444;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #dc2626;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.599);
+}
+
+.required {
+    color: red;
+    margin-left: 2px;
+    font-size: 0.8em; /* Smaller font size for the asterisk */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .input,
+    .inputQuery {
+        font-size: small;
+    }
+
+    .button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        flex-wrap: wrap;
+    }
+
+    .input,
+    .inputQuery {
+        font-size: small;
+    }
+
+    .required {
+        font-size: 0.8em; /* Ensuring the smaller font size is consistent on small screens */
+    }
+
+    .button {
+        font-size: medium;
+        padding: 8px;
+    }
+}

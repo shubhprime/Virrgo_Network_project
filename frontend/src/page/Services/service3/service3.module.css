@@ -1,0 +1,244 @@
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    height: 58vh;
+    overflow: hidden;
+}
+
+.bannerImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.topicHeading {
+    width: 70vw;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.topicPara {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-size: 1.2rem;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.consultancySection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 80vw;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+.consultancyImg {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 40px;
+}
+
+.consultancyContent {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.consultancyContent h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.consultancyContent p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.whyUsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.whyUsSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.whyUsSection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.additionalInfoSection {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    width: 80vw;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.additionalInfoSection img {
+    width: 35vw;
+    height: auto;
+    border-radius: 40px;
+}
+
+.additionalInfoSection div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.additionalInfoSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.additionalInfoSection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.technologySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.technologySection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.technologySection p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.horizontal {
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    border: 0;
+    background-color: rgb(103, 104, 103);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .consultancySection {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .consultancyImg {
+        width: 40%;
+        margin-right: 0;
+    }
+
+    .consultancyContent {
+        width: 100%;
+    }
+
+    .additionalInfoSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .additionalInfoSection img {
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topicHeading, .topicPara {
+        width: 90vw;
+    }
+
+    .consultancySection {
+        flex-direction: column;
+        gap: 20px;
+        width: 90vw;
+    }
+
+    .consultancyImg {
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .consultancyContent {
+        width: 100%;
+    }
+
+    .whyUsSection {
+        width: 90vw;
+    }
+
+    .additionalInfoSection {
+        flex-direction: column;
+        gap: 20px;
+        width: 90vw;
+    }
+
+    .additionalInfoSection img {
+        width: 70%;
+    }
+
+    .technologySection {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .topicHeading {
+        font-size: 1.5rem;
+    }
+
+    .topicPara {
+        font-size: 1rem;
+    }
+
+    .consultancyImg {
+        width: 80%;
+    }
+
+    .additionalInfoSection img {
+        width: 100%;
+    }
+
+    .technologySection h2 {
+        font-size: 1.5rem;
+    }
+
+    .technologySection p {
+        font-size: 1rem;
+    }
+}

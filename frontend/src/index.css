@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Sora:wght@400&display=swap');
+
+body{
+    background-color: #f5f5dc;
+    font-family: 'Sora', sans-serif;
+}
+
+main{
+    background-color: #f5f5dc;
+    min-height: calc(100vh);
+}

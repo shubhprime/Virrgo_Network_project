@@ -2,7 +2,7 @@ import React from 'react';
 import productStyles from './product1.module.css';
 
 const Product1 = () => {
-  const pic1 = 'https://cdn.pixabay.com/photo/2016/06/07/16/48/notebook-1443404_960_720.jpg';
+  const pic1 = 'https://searchengineland.com/wp-content/seloads/2015/11/teamwork-meeting-collaboration-ss-1920.jpg';
   const pic2 = 'https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_960_720.jpg';
 
   return (
